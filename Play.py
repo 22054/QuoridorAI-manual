@@ -1,4 +1,5 @@
 from Minimax import *
+from pygame import key, locals
 
 start_input = {
   "players": ["AI", "You"],
@@ -24,6 +25,14 @@ start_input = {
 }
 
 def getMove(state):
+	valid = False
+	while not valid:
+		keys = key.get_pressed()
+		if keys[locals.K_UP]:
+		elif keys[locals.K_DOWN]:
+		elif keys[locals.K_LEFT]:
+		elif keys[locals.K_RIGHT]:
+		elif keys[locals.K_SPACE]:
 	return move
 
 if __name__ == "__main__":
